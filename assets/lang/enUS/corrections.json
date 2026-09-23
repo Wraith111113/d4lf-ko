@@ -1,0 +1,48 @@
+{
+    "bad_tts_uniques": {
+        "bane_ofahjad-den": "bane_of_ahjad-den",
+        "cains_wild_lighting": "cains_wild_lightning",
+        "galvanicazurite": "galvanic_azurite",
+        "grandfather": "the_grandfather",
+        "kilt_ofblackwing": "kilt_of_blackwing",
+        "mjￃﾖlnic_ryng": "mjölnic_ryng",
+        "sunstainedwar-crozier": "sunstained_war-crozier"
+    },
+    "filter_after_keyword": [
+        " cts ",
+        "account",
+        "compare",
+        "dearest will",
+        "empty socket",
+        "granted",
+        "pacts",
+        "requires lev",
+        "requires level",
+        "requires world",
+        "scroll down",
+        "scroll up",
+        "sell value",
+        "when equipped"
+    ],
+    "filter_words": [
+        "account bound",
+        "barbarian",
+        "by your clas",
+        "by your class",
+        "druid",
+        "dungeon affixe",
+        "imprinted",
+        "monster level",
+        "necromancer",
+        "not useable",
+        "only)",
+        "operties lost",
+        "properties lost",
+        "requires world tier 3",
+        "requires world tier 4",
+        "revives allowed",
+        "rogue",
+        "sorcerer",
+        "sorceress"
+    ]
+}

@@ -1,0 +1,1238 @@
+{
+    "100000_steps": {
+        "localized_name": "만보",
+        "num_inherents": 0
+    },
+    "accord_of_the_wilds": {
+        "localized_name": "황야의_합의",
+        "num_inherents": 0
+    },
+    "aegroms_schism": {
+        "localized_name": "아이그롬의_분열",
+        "num_inherents": 0
+    },
+    "ahavarion_spear_of_lycander": {
+        "localized_name": "아발리온_-_라이칸더의_창",
+        "num_inherents": 0
+    },
+    "airidahs_inexorable_will": {
+        "localized_name": "아이리다의_거침없는_의지",
+        "num_inherents": 0
+    },
+    "anathema_of_the_primes": {
+        "localized_name": "대악마의_대척점",
+        "num_inherents": 0
+    },
+    "ancients_oath": {
+        "localized_name": "선조의_맹세",
+        "num_inherents": 0
+    },
+    "andariels_visage": {
+        "localized_name": "안다리엘의_두개골",
+        "num_inherents": 0
+    },
+    "annihilus": {
+        "localized_name": "어나이얼러스",
+        "num_inherents": 0
+    },
+    "arcadia": {
+        "localized_name": "아카디아",
+        "num_inherents": 0
+    },
+    "argent_veil": {
+        "localized_name": "은빛_장막",
+        "num_inherents": 0
+    },
+    "ariocs_needle": {
+        "localized_name": "아리옥의_바늘",
+        "num_inherents": 0
+    },
+    "arreats_bearing": {
+        "localized_name": "아리앗의_자세",
+        "num_inherents": 0
+    },
+    "ashearas_khanjar": {
+        "localized_name": "아시아라의_칸자르",
+        "num_inherents": 0
+    },
+    "assassins_stride": {
+        "localized_name": "암살자의_걸음",
+        "num_inherents": 0
+    },
+    "autumnal_crown": {
+        "localized_name": "가을의_왕관",
+        "num_inherents": 0
+    },
+    "axial_conduit": {
+        "localized_name": "축_도관",
+        "num_inherents": 0
+    },
+    "azurewrath": {
+        "localized_name": "푸른_서슬",
+        "num_inherents": 0
+    },
+    "balazans_maxtlatl": {
+        "localized_name": "발라잔의_짚허리띠",
+        "num_inherents": 0
+    },
+    "band_of_first_breath": {
+        "localized_name": "첫_숨결의_가락지",
+        "num_inherents": 0
+    },
+    "bands_of_ichorous_rose": {
+        "localized_name": "핏빛_장미의_띠",
+        "num_inherents": 0
+    },
+    "bane_of_ahjad-den": {
+        "localized_name": "파괴의_군대의_숙적",
+        "num_inherents": 0
+    },
+    "banished_lords_talisman": {
+        "localized_name": "추방된_군주의_영물",
+        "num_inherents": 0
+    },
+    "bastion_of_sir_matthias": {
+        "localized_name": "마티아스_경의_철벽",
+        "num_inherents": 2
+    },
+    "battle_trance": {
+        "localized_name": "전투_무아지경",
+        "num_inherents": 0
+    },
+    "beastfall_boots": {
+        "localized_name": "야수내림_장화",
+        "num_inherents": 0
+    },
+    "bell_of_the_bovine": {
+        "localized_name": "소의_워낭",
+        "num_inherents": 1
+    },
+    "bindings_of_attrition": {
+        "localized_name": "마멸의_구속구",
+        "num_inherents": 0
+    },
+    "black_river": {
+        "localized_name": "검은_강",
+        "num_inherents": 0
+    },
+    "blood-mad_idol": {
+        "localized_name": "피의_광기_우상",
+        "num_inherents": 0
+    },
+    "blood_artisans_cuirass": {
+        "localized_name": "피_장인의_흉갑",
+        "num_inherents": 0
+    },
+    "blood_moon_breeches": {
+        "localized_name": "핏빛_달의_무릎바지",
+        "num_inherents": 0
+    },
+    "blood_wake": {
+        "localized_name": "피의_흔적",
+        "num_inherents": 0
+    },
+    "bloodless_scream": {
+        "localized_name": "피_말리는_비명",
+        "num_inherents": 0
+    },
+    "blue_rose": {
+        "localized_name": "푸른_장미",
+        "num_inherents": 0
+    },
+    "bridle_of_torbaalos": {
+        "localized_name": "토르바알로스의_굴레",
+        "num_inherents": 0
+    },
+    "cage_of_madness": {
+        "localized_name": "광기의_우리",
+        "num_inherents": 0
+    },
+    "cassias_grace": {
+        "localized_name": "카시아의_은총",
+        "num_inherents": 0
+    },
+    "cathedrals_song": {
+        "localized_name": "대성당의_노래",
+        "num_inherents": 2
+    },
+    "chainscourged_mail": {
+        "localized_name": "사슬참화_쇠미늘",
+        "num_inherents": 0
+    },
+    "cluckeye": {
+        "localized_name": "닭살",
+        "num_inherents": 0
+    },
+    "cluckonomicon": {
+        "localized_name": "꼬꼬노미콘",
+        "num_inherents": 0
+    },
+    "condemnation": {
+        "localized_name": "규탄",
+        "num_inherents": 0
+    },
+    "coop_de_grâce": {
+        "localized_name": "자비로운_살계",
+        "num_inherents": 0
+    },
+    "cowl_of_malefic_torment": {
+        "localized_name": "흉악한_고행의_머리쓰개",
+        "num_inherents": 0
+    },
+    "cowl_of_the_nameless": {
+        "localized_name": "이름_없는_자의_머리쓰개",
+        "num_inherents": 0
+    },
+    "craze_of_the_dead_god": {
+        "localized_name": "죽은_신의_발광",
+        "num_inherents": 0
+    },
+    "crown_of_lucion": {
+        "localized_name": "루시온의_왕관",
+        "num_inherents": 0
+    },
+    "cruors_embrace": {
+        "localized_name": "크루올의_포옹",
+        "num_inherents": 0
+    },
+    "dark_howl": {
+        "localized_name": "어둠의_포효",
+        "num_inherents": 0
+    },
+    "dark_stalkers_medallion": {
+        "localized_name": "어둠의_추적자의_메달",
+        "num_inherents": 0
+    },
+    "dawnfire": {
+        "localized_name": "새벽불길",
+        "num_inherents": 0
+    },
+    "deathgrip": {
+        "localized_name": "죽음의_손아귀",
+        "num_inherents": 0
+    },
+    "deathless_visage": {
+        "localized_name": "죽음_없는_얼굴",
+        "num_inherents": 0
+    },
+    "deathmask_of_nirmitruq": {
+        "localized_name": "니르미트루크의_죽음가면",
+        "num_inherents": 0
+    },
+    "deaths_pavane": {
+        "localized_name": "죽음의_파반",
+        "num_inherents": 0
+    },
+    "deathspeakers_pendant": {
+        "localized_name": "죽음예언자의_펜던트",
+        "num_inherents": 0
+    },
+    "desperate_march": {
+        "localized_name": "필사적인_행군",
+        "num_inherents": 0
+    },
+    "dirge_of_airidah": {
+        "localized_name": "아이리다의_만가",
+        "num_inherents": 0
+    },
+    "dirge_of_odium": {
+        "localized_name": "혐오의_만가",
+        "num_inherents": 0
+    },
+    "dolmen_stone": {
+        "localized_name": "고인돌",
+        "num_inherents": 0
+    },
+    "doombringer": {
+        "localized_name": "궤멸자",
+        "num_inherents": 0
+    },
+    "drognans_anguish": {
+        "localized_name": "드로그난의_고뇌",
+        "num_inherents": 0
+    },
+    "eaglehorn": {
+        "localized_name": "수리뿔",
+        "num_inherents": 0
+    },
+    "earthbreaker": {
+        "localized_name": "대지_파괴자",
+        "num_inherents": 0
+    },
+    "ebonpiercer": {
+        "localized_name": "칠흑쐐기",
+        "num_inherents": 0
+    },
+    "echo_of_kwatli": {
+        "localized_name": "크와틀리의_메아리",
+        "num_inherents": 0
+    },
+    "eggcecutioner": {
+        "localized_name": "알집행자",
+        "num_inherents": 0
+    },
+    "eggis": {
+        "localized_name": "에기스",
+        "num_inherents": 2
+    },
+    "eldruin_sword_of_justice": {
+        "localized_name": "정의의_검_엘드루인",
+        "num_inherents": 1
+    },
+    "elegy": {
+        "localized_name": "비가",
+        "num_inherents": 0
+    },
+    "emberfury": {
+        "localized_name": "잿불의_분노",
+        "num_inherents": 0
+    },
+    "emblem_of_staalbreak": {
+        "localized_name": "스탈브레이크의_표징",
+        "num_inherents": 0
+    },
+    "endurant_faith": {
+        "localized_name": "인내하는_신앙",
+        "num_inherents": 0
+    },
+    "esadoras_overflowing_cameo": {
+        "localized_name": "에사도라의_넘실거리는_카메오",
+        "num_inherents": 0
+    },
+    "esus_heirloom": {
+        "localized_name": "에수의_가보",
+        "num_inherents": 0
+    },
+    "etnas_lost_dagger": {
+        "localized_name": "에트나의_잃어버린_단검",
+        "num_inherents": 0
+    },
+    "eye_of_baal": {
+        "localized_name": "바알의_눈",
+        "num_inherents": 0
+    },
+    "eyes_in_the_dark": {
+        "localized_name": "어둠_속의_눈",
+        "num_inherents": 0
+    },
+    "fang_of_the_vipermagi": {
+        "localized_name": "독사마술사의_송곳니",
+        "num_inherents": 0
+    },
+    "fields_of_crimson": {
+        "localized_name": "심홍색의_전장",
+        "num_inherents": 0
+    },
+    "fist_of_the_iron_rose": {
+        "localized_name": "강철_장미의_주먹",
+        "num_inherents": 0
+    },
+    "fists_of_fate": {
+        "localized_name": "운명의_주먹",
+        "num_inherents": 0
+    },
+    "flamescar": {
+        "localized_name": "화염흉터",
+        "num_inherents": 0
+    },
+    "flameweaver": {
+        "localized_name": "화염직조자",
+        "num_inherents": 0
+    },
+    "fleshrender": {
+        "localized_name": "살점_분쇄봉",
+        "num_inherents": 0
+    },
+    "fleshwrit_carapace": {
+        "localized_name": "살점_갑각",
+        "num_inherents": 0
+    },
+    "flickerstep": {
+        "localized_name": "명멸걸음",
+        "num_inherents": 0
+    },
+    "footfalls_of_the_waning_world": {
+        "localized_name": "기우는_세계의_발소리",
+        "num_inherents": 0
+    },
+    "fractured_runestone": {
+        "localized_name": "조각난_룬석",
+        "num_inherents": 0
+    },
+    "fractured_winterglass": {
+        "localized_name": "조각난_겨울유리",
+        "num_inherents": 0
+    },
+    "frostburn": {
+        "localized_name": "서리불꽃",
+        "num_inherents": 0
+    },
+    "fury_of_the_wilds": {
+        "localized_name": "황야의_분노",
+        "num_inherents": 0
+    },
+    "galvanic_azurite": {
+        "localized_name": "전류의_남동석",
+        "num_inherents": 0
+    },
+    "gate_of_the_red_dawn": {
+        "localized_name": "붉은_새벽의_문",
+        "num_inherents": 2
+    },
+    "gathlens_birthright": {
+        "localized_name": "가틀렌의_생득권",
+        "num_inherents": 0
+    },
+    "gauntlets_of_sheol": {
+        "localized_name": "황천의_팔목_장갑",
+        "num_inherents": 0
+    },
+    "gift_of_frost": {
+        "localized_name": "서리의_선물",
+        "num_inherents": 0
+    },
+    "gladiators_triumph": {
+        "localized_name": "검투사의_승리",
+        "num_inherents": 0
+    },
+    "gloves_of_the_illuminator": {
+        "localized_name": "계몽자의_장갑",
+        "num_inherents": 0
+    },
+    "godslayer_crown": {
+        "localized_name": "신_살해자_왕관",
+        "num_inherents": 0
+    },
+    "gohrs_devastating_grips": {
+        "localized_name": "고르의_파멸적인_손_보호구",
+        "num_inherents": 0
+    },
+    "gospel_of_the_devotee": {
+        "localized_name": "헌신자의_복음",
+        "num_inherents": 0
+    },
+    "grasp_of_shadow": {
+        "localized_name": "그림자의_매듭끈",
+        "num_inherents": 0
+    },
+    "gravewalkers_hand": {
+        "localized_name": "무덤방랑자의_손",
+        "num_inherents": 0
+    },
+    "greatstaff_of_the_crone": {
+        "localized_name": "마녀의_큰지팡이",
+        "num_inherents": 0
+    },
+    "greaves_of_the_empty_tomb": {
+        "localized_name": "텅_빈_무덤의_경갑",
+        "num_inherents": 0
+    },
+    "greenwalkers_oath": {
+        "localized_name": "초원방랑자의_서약",
+        "num_inherents": 0
+    },
+    "greenwalkers_signet": {
+        "localized_name": "초원방랑자의_인장",
+        "num_inherents": 0
+    },
+    "griswolds_opus": {
+        "localized_name": "그리스월드의_작품",
+        "num_inherents": 0
+    },
+    "hail_of_verglas": {
+        "localized_name": "살얼음의_우박",
+        "num_inherents": 0
+    },
+    "hand_of_apotheosis": {
+        "localized_name": "극치의_손",
+        "num_inherents": 0
+    },
+    "hands_of_the_worldbreaker": {
+        "localized_name": "세계파괴자의_손",
+        "num_inherents": 0
+    },
+    "hangmans_hand": {
+        "localized_name": "교수형_집행인의_손",
+        "num_inherents": 0
+    },
+    "harlequin_crest": {
+        "localized_name": "할리퀸_관모",
+        "num_inherents": 0
+    },
+    "harmony_of_ebewaka": {
+        "localized_name": "에베와카의_조화",
+        "num_inherents": 0
+    },
+    "heart_of_azgar": {
+        "localized_name": "아즈가의_심장",
+        "num_inherents": 0
+    },
+    "hecaton_chasm": {
+        "localized_name": "일백의_균열",
+        "num_inherents": 0
+    },
+    "heir_of_perdition": {
+        "localized_name": "영벌의_후예",
+        "num_inherents": 0
+    },
+    "hellbrand_signet": {
+        "localized_name": "지옥낙인_인장",
+        "num_inherents": 0
+    },
+    "hellhammer": {
+        "localized_name": "지옥망치",
+        "num_inherents": 0
+    },
+    "hellhounds_sabatons": {
+        "localized_name": "지옥사냥개의_발덮개",
+        "num_inherents": 0
+    },
+    "henris_perquisition": {
+        "localized_name": "앙리의_쥐잡이",
+        "num_inherents": 1
+    },
+    "herald_of_zakarum": {
+        "localized_name": "자카룸의_전령",
+        "num_inherents": 3
+    },
+    "heralds_morningstar": {
+        "localized_name": "전령의_샛별",
+        "num_inherents": 0
+    },
+    "hesha_e_kesungi": {
+        "localized_name": "헤샤_에_케순기",
+        "num_inherents": 0
+    },
+    "hooves_of_the_mountain_god": {
+        "localized_name": "산신의_발굽",
+        "num_inherents": 0
+    },
+    "howl_from_below": {
+        "localized_name": "아래에서_들려오는_울부짖음",
+        "num_inherents": 0
+    },
+    "hunters_zenith": {
+        "localized_name": "사냥꾼의_정점",
+        "num_inherents": 0
+    },
+    "iceheart_brais": {
+        "localized_name": "얼음심장_브레이스",
+        "num_inherents": 0
+    },
+    "ifehs_dire_totem": {
+        "localized_name": "이페의_섬뜩한_토템",
+        "num_inherents": 0
+    },
+    "in-geom": {
+        "localized_name": "인검",
+        "num_inherents": 0
+    },
+    "indiras_memory": {
+        "localized_name": "인디라의_기억",
+        "num_inherents": 0
+    },
+    "infernal_homunculus": {
+        "localized_name": "지옥불_호문쿨루스",
+        "num_inherents": 0
+    },
+    "insatiable_fury": {
+        "localized_name": "만족을_모르는_분노",
+        "num_inherents": 0
+    },
+    "jacinth_shell": {
+        "localized_name": "적황색_갑각",
+        "num_inherents": 0
+    },
+    "judgment_of_auriel": {
+        "localized_name": "아우리엘의_심판",
+        "num_inherents": 0
+    },
+    "judicants_glaivehelm": {
+        "localized_name": "사법관의_글레이브투구",
+        "num_inherents": 0
+    },
+    "kabraxis_will": {
+        "localized_name": "카브락시스의_의지",
+        "num_inherents": 0
+    },
+    "kessimes_legacy": {
+        "localized_name": "케시메의_유산",
+        "num_inherents": 0
+    },
+    "khamsin_steppewalkers": {
+        "localized_name": "캄신_평원방랑자",
+        "num_inherents": 0
+    },
+    "kilt_of_blackwing": {
+        "localized_name": "검은날개의_킬트",
+        "num_inherents": 0
+    },
+    "leorics_crown": {
+        "localized_name": "레오릭의_왕관",
+        "num_inherents": 0
+    },
+    "levin_grasp": {
+        "localized_name": "전광의_손아귀",
+        "num_inherents": 0
+    },
+    "lidless_wall": {
+        "localized_name": "각성의_벽",
+        "num_inherents": 2
+    },
+    "lights_rebuke": {
+        "localized_name": "빛의_질책",
+        "num_inherents": 0
+    },
+    "litany_of_sable": {
+        "localized_name": "흑담비의_기도문",
+        "num_inherents": 0
+    },
+    "locrans_talisman": {
+        "localized_name": "로크란의_영물",
+        "num_inherents": 0
+    },
+    "loyaltys_mantle": {
+        "localized_name": "충의의_어깨걸이",
+        "num_inherents": 0
+    },
+    "lurid_pact": {
+        "localized_name": "소름_끼치는_맹약",
+        "num_inherents": 0
+    },
+    "mace_of_king_leoric": {
+        "localized_name": "레오릭_왕의_철퇴",
+        "num_inherents": 0
+    },
+    "mad_wolfs_glee": {
+        "localized_name": "미친_늑대의_환희",
+        "num_inherents": 0
+    },
+    "malefic_crescent": {
+        "localized_name": "사악한_초승달",
+        "num_inherents": 0
+    },
+    "mantle_of_mountains_fury": {
+        "localized_name": "산의_분노의_어깨걸이",
+        "num_inherents": 0
+    },
+    "mantle_of_the_grey": {
+        "localized_name": "회색의_어깨걸이",
+        "num_inherents": 0
+    },
+    "march_of_the_stalwart_soul": {
+        "localized_name": "굳건한_영혼의_행진",
+        "num_inherents": 0
+    },
+    "mark_of_the_old_wolf": {
+        "localized_name": "늙은_늑대의_징표",
+        "num_inherents": 0
+    },
+    "melted_heart_of_selig": {
+        "localized_name": "셀리그의_녹은_심장",
+        "num_inherents": 0
+    },
+    "messerschmidts_reaver": {
+        "localized_name": "메서슈미트의_도끼",
+        "num_inherents": 0
+    },
+    "might_of_qual-kehk": {
+        "localized_name": "콸케크의_힘",
+        "num_inherents": 0
+    },
+    "might_of_the_ursine": {
+        "localized_name": "곰의_힘",
+        "num_inherents": 0
+    },
+    "misericorde": {
+        "localized_name": "자비의_검",
+        "num_inherents": 0
+    },
+    "mjölnic_ryng": {
+        "localized_name": "묠니르의_반지",
+        "num_inherents": 0
+    },
+    "molochs_beating_flame": {
+        "localized_name": "몰로크의_퍼덕이는_불길",
+        "num_inherents": 0
+    },
+    "molten_band": {
+        "localized_name": "녹아내린_가락지",
+        "num_inherents": 0
+    },
+    "morlu_fleshward": {
+        "localized_name": "몰루_살점결계",
+        "num_inherents": 0
+    },
+    "mothers_embrace": {
+        "localized_name": "어머니의_품",
+        "num_inherents": 0
+    },
+    "mutilator_plate": {
+        "localized_name": "절단자의_판금_갑옷",
+        "num_inherents": 0
+    },
+    "nails_of_the_gore-crowned": {
+        "localized_name": "선혈_왕관의_못",
+        "num_inherents": 0
+    },
+    "nemesis_bracers": {
+        "localized_name": "천벌의_팔보호구",
+        "num_inherents": 0
+    },
+    "nesekem_the_herald": {
+        "localized_name": "전령_네세켐",
+        "num_inherents": 0
+    },
+    "night_terror": {
+        "localized_name": "밤의_공포",
+        "num_inherents": 0
+    },
+    "nomads_longing_heart": {
+        "localized_name": "유목민의_그리운_마음",
+        "num_inherents": 0
+    },
+    "okuns_catalyst": {
+        "localized_name": "오쿤의_촉매",
+        "num_inherents": 1
+    },
+    "omen_of_pain": {
+        "localized_name": "고통의_징조",
+        "num_inherents": 0
+    },
+    "onyx_soul": {
+        "localized_name": "흑마노_영혼",
+        "num_inherents": 0
+    },
+    "ophidian_iris": {
+        "localized_name": "뱀의_홍채",
+        "num_inherents": 0
+    },
+    "orphan_maker": {
+        "localized_name": "고아를_만드는_자",
+        "num_inherents": 0
+    },
+    "orsivane": {
+        "localized_name": "오르시베인",
+        "num_inherents": 0
+    },
+    "overkill": {
+        "localized_name": "과잉_살상",
+        "num_inherents": 0
+    },
+    "pact_of_bone": {
+        "localized_name": "뼈의_맹약",
+        "num_inherents": 0
+    },
+    "paingorgers_gauntlets": {
+        "localized_name": "고통탐식자의_팔목_장갑",
+        "num_inherents": 0
+    },
+    "path_of_the_emissary": {
+        "localized_name": "밀사의_길",
+        "num_inherents": 0
+    },
+    "path_of_tragoul": {
+        "localized_name": "트래그울의_길",
+        "num_inherents": 0
+    },
+    "peacemongers_signet": {
+        "localized_name": "평화주의자의_인장",
+        "num_inherents": 0
+    },
+    "penitent_greaves": {
+        "localized_name": "참회의_경갑",
+        "num_inherents": 0
+    },
+    "pitfighters_gull": {
+        "localized_name": "투기장_싸움꾼의_사기",
+        "num_inherents": 0
+    },
+    "protean_heart": {
+        "localized_name": "프로테우스의_심장",
+        "num_inherents": 0
+    },
+    "protection_of_the_prime": {
+        "localized_name": "대악마의_수호",
+        "num_inherents": 0
+    },
+    "purified_lightbringer": {
+        "localized_name": "정화된_빛의_인도자",
+        "num_inherents": 0
+    },
+    "rage_of_harrogath": {
+        "localized_name": "하로가스의_분노",
+        "num_inherents": 0
+    },
+    "raiment_of_the_infinite": {
+        "localized_name": "무한의_의복",
+        "num_inherents": 0
+    },
+    "raiment_of_the_sea": {
+        "localized_name": "바다의_의복",
+        "num_inherents": 0
+    },
+    "rakanoths_wake": {
+        "localized_name": "라카노스의_자취",
+        "num_inherents": 0
+    },
+    "ramaladnis_magnum_opus": {
+        "localized_name": "라말라드니의_역작",
+        "num_inherents": 0
+    },
+    "razorplate": {
+        "localized_name": "서슬판금",
+        "num_inherents": 0
+    },
+    "red_blessing": {
+        "localized_name": "붉은_축복",
+        "num_inherents": 0
+    },
+    "red_sermon": {
+        "localized_name": "붉은_설교",
+        "num_inherents": 0
+    },
+    "rictus_of_terror": {
+        "localized_name": "공포의_억지웃음",
+        "num_inherents": 0
+    },
+    "rimeblood": {
+        "localized_name": "서리피",
+        "num_inherents": 0
+    },
+    "ring_of_mendeln": {
+        "localized_name": "멘델른의_반지",
+        "num_inherents": 0
+    },
+    "ring_of_red_furor": {
+        "localized_name": "붉은_열광의_반지",
+        "num_inherents": 0
+    },
+    "ring_of_starless_skies": {
+        "localized_name": "별_없는_하늘의_반지",
+        "num_inherents": 0
+    },
+    "ring_of_the_midday_hunt": {
+        "localized_name": "정오_사냥의_반지",
+        "num_inherents": 0
+    },
+    "ring_of_the_midnight_sun": {
+        "localized_name": "한밤중_태양의_반지",
+        "num_inherents": 0
+    },
+    "ring_of_the_ravenous": {
+        "localized_name": "걸신들린_자의_반지",
+        "num_inherents": 0
+    },
+    "ring_of_the_sacrilegious_soul": {
+        "localized_name": "신성모독자_영혼의_반지",
+        "num_inherents": 0
+    },
+    "ring_of_writhing_moon": {
+        "localized_name": "꿈틀거리는_달의_반지",
+        "num_inherents": 0
+    },
+    "rod_of_kepeleke": {
+        "localized_name": "케펠레케의_막대",
+        "num_inherents": 0
+    },
+    "rotting_lightbringer": {
+        "localized_name": "썩어가는_빛의_인도자",
+        "num_inherents": 0
+    },
+    "rustbitten_dirk": {
+        "localized_name": "녹물림_더크",
+        "num_inherents": 0
+    },
+    "saboteurs_signet": {
+        "localized_name": "공작원의_인장",
+        "num_inherents": 0
+    },
+    "sabre_of_tsasgal": {
+        "localized_name": "차스갈의_세이버",
+        "num_inherents": 0
+    },
+    "sanctis_of_kethamar": {
+        "localized_name": "케타마르의_성물",
+        "num_inherents": 0
+    },
+    "sanguivor_blade_of_zir": {
+        "localized_name": "지르의_칼날_생귀보르",
+        "num_inherents": 0
+    },
+    "sashes_of_the_wretched": {
+        "localized_name": "뒤틀린_자의_현장",
+        "num_inherents": 0
+    },
+    "scepter_of_the_three": {
+        "localized_name": "셋의_홀",
+        "num_inherents": 0
+    },
+    "scorn_of_the_earth": {
+        "localized_name": "대지_경멸",
+        "num_inherents": 0
+    },
+    "scoundrels_kiss": {
+        "localized_name": "건달의_입맞춤",
+        "num_inherents": 0
+    },
+    "scoundrels_leathers": {
+        "localized_name": "건달의_가죽옷",
+        "num_inherents": 0
+    },
+    "scourge_of_duriel": {
+        "localized_name": "두리엘의_회초리",
+        "num_inherents": 0
+    },
+    "sea_lords_fine_gloves": {
+        "localized_name": "바다_군주의_좋은_장갑",
+        "num_inherents": 0
+    },
+    "seal_of_the_diamond_mind": {
+        "localized_name": "다이아몬드_정신의_문장",
+        "num_inherents": 0
+    },
+    "seal_of_the_golden_epiphany": {
+        "localized_name": "금빛_현현의_문장",
+        "num_inherents": 0
+    },
+    "seal_of_the_ophanim": {
+        "localized_name": "오파님의_문장",
+        "num_inherents": 0
+    },
+    "seal_of_the_second_trumpet": {
+        "localized_name": "두_번째_나팔의_문장",
+        "num_inherents": 0
+    },
+    "seal_of_the_severed_finger": {
+        "localized_name": "잘린_손가락의_문장",
+        "num_inherents": 0
+    },
+    "seed_of_horazon": {
+        "localized_name": "호라존의_씨앗",
+        "num_inherents": 0
+    },
+    "sepazontec": {
+        "localized_name": "세파존텍",
+        "num_inherents": 0
+    },
+    "shanars_resonance": {
+        "localized_name": "샤나르의_공명",
+        "num_inherents": 0
+    },
+    "shard_of_verathiel": {
+        "localized_name": "베라티엘의_파편",
+        "num_inherents": 0
+    },
+    "shattered_vow": {
+        "localized_name": "박살난_맹세",
+        "num_inherents": 0
+    },
+    "shroud_of_false_death": {
+        "localized_name": "거짓된_죽음의_수의",
+        "num_inherents": 0
+    },
+    "shroud_of_khanduras": {
+        "localized_name": "칸두라스의_장막",
+        "num_inherents": 0
+    },
+    "shrouded_gift": {
+        "localized_name": "가려진_선물",
+        "num_inherents": 0
+    },
+    "sidhe_bindings": {
+        "localized_name": "시드헤_구속구",
+        "num_inherents": 0
+    },
+    "signet_of_pelghain": {
+        "localized_name": "펠가인의_인장",
+        "num_inherents": 0
+    },
+    "sire_of_sin": {
+        "localized_name": "죄악의_아비",
+        "num_inherents": 0
+    },
+    "skyhunter": {
+        "localized_name": "하늘사냥꾼",
+        "num_inherents": 0
+    },
+    "sliver_of_hate": {
+        "localized_name": "증오의_단편",
+        "num_inherents": 0
+    },
+    "soulbrand": {
+        "localized_name": "영혼_낙인",
+        "num_inherents": 0
+    },
+    "spine_of_tathamet": {
+        "localized_name": "타타메트의_척추",
+        "num_inherents": 0
+    },
+    "squirts_blouse": {
+        "localized_name": "꼬맹이의_블라우스",
+        "num_inherents": 0
+    },
+    "staff_of_endless_rage": {
+        "localized_name": "끝없는_분노의_지팡이",
+        "num_inherents": 0
+    },
+    "staff_of_lam_esen": {
+        "localized_name": "람_에센의_지팡이",
+        "num_inherents": 0
+    },
+    "staff_of_zerae": {
+        "localized_name": "제레이의_지팡이",
+        "num_inherents": 0
+    },
+    "starfall_coronet": {
+        "localized_name": "별똥별의_관",
+        "num_inherents": 0
+    },
+    "stone_of_jordan": {
+        "localized_name": "요르단의_반지",
+        "num_inherents": 0
+    },
+    "stone_of_vehemen": {
+        "localized_name": "맹위의_돌",
+        "num_inherents": 0
+    },
+    "storms_companion": {
+        "localized_name": "폭풍의_동료",
+        "num_inherents": 0
+    },
+    "strike_of_stormhorn": {
+        "localized_name": "폭풍뿔의_공격",
+        "num_inherents": 0
+    },
+    "sunbirds_gorget": {
+        "localized_name": "태양새의_목가리개",
+        "num_inherents": 0
+    },
+    "sunbrand": {
+        "localized_name": "태양의_낙인",
+        "num_inherents": 0
+    },
+    "sundered_night": {
+        "localized_name": "갈라진_밤",
+        "num_inherents": 0
+    },
+    "sunstained_war-crozier": {
+        "localized_name": "태양바램_전쟁용_의식_지팡이",
+        "num_inherents": 0
+    },
+    "supplication": {
+        "localized_name": "간청",
+        "num_inherents": 0
+    },
+    "tal_rashas_iridescent_loop": {
+        "localized_name": "탈_라샤의_오색찬란한_고리",
+        "num_inherents": 0
+    },
+    "tassets_of_the_dawning_sky": {
+        "localized_name": "새벽하늘_무릎받이",
+        "num_inherents": 0
+    },
+    "temerity": {
+        "localized_name": "만용",
+        "num_inherents": 0
+    },
+    "tempest_roar": {
+        "localized_name": "폭풍의_포효",
+        "num_inherents": 0
+    },
+    "the_basilisk": {
+        "localized_name": "바실리스크",
+        "num_inherents": 0
+    },
+    "the_blade_of_sight_aflame": {
+        "localized_name": "타오르는_시야의_검",
+        "num_inherents": 0
+    },
+    "the_butchers_cleaver": {
+        "localized_name": "도살자의_식칼",
+        "num_inherents": 0
+    },
+    "the_eightfold_idol": {
+        "localized_name": "여덟_겹의_우상",
+        "num_inherents": 0
+    },
+    "the_fecund_seal": {
+        "localized_name": "다산의_문장",
+        "num_inherents": 0
+    },
+    "the_furnace": {
+        "localized_name": "용광로",
+        "num_inherents": 0
+    },
+    "the_gloom_ward": {
+        "localized_name": "어스름_결계",
+        "num_inherents": 2
+    },
+    "the_grandfather": {
+        "localized_name": "한아비",
+        "num_inherents": 1
+    },
+    "the_hand_of_naz": {
+        "localized_name": "나즈의_손",
+        "num_inherents": 0
+    },
+    "the_hemat_stone": {
+        "localized_name": "피의_돌",
+        "num_inherents": 0
+    },
+    "the_maestro": {
+        "localized_name": "거장",
+        "num_inherents": 0
+    },
+    "the_mortacrux": {
+        "localized_name": "죽음십자",
+        "num_inherents": 0
+    },
+    "the_oculus": {
+        "localized_name": "망울",
+        "num_inherents": 0
+    },
+    "the_open_eye_of_gorgorra": {
+        "localized_name": "고르고라의_뜬_눈",
+        "num_inherents": 0
+    },
+    "the_relentless_heart": {
+        "localized_name": "가차없는_마음",
+        "num_inherents": 0
+    },
+    "the_third_blade": {
+        "localized_name": "세_번째_칼날",
+        "num_inherents": 0
+    },
+    "the_umbracrux": {
+        "localized_name": "그림자십자",
+        "num_inherents": 0
+    },
+    "the_undercrown": {
+        "localized_name": "지하왕관",
+        "num_inherents": 0
+    },
+    "the_unmaker": {
+        "localized_name": "파괴자",
+        "num_inherents": 0
+    },
+    "thousand-eye_reaver": {
+        "localized_name": "천_개의_눈_강탈자",
+        "num_inherents": 0
+    },
+    "thrice-woven_nightmare": {
+        "localized_name": "세_번_엮은_악몽",
+        "num_inherents": 0
+    },
+    "thundergods_blessing": {
+        "localized_name": "천둥신의_축복",
+        "num_inherents": 0
+    },
+    "tibaults_will": {
+        "localized_name": "티볼트의_의지",
+        "num_inherents": 0
+    },
+    "tuskhelm_of_joritz_the_mighty": {
+        "localized_name": "위대한_조리츠의_엄니_투구",
+        "num_inherents": 0
+    },
+    "twin_strikes": {
+        "localized_name": "이중_강타",
+        "num_inherents": 0
+    },
+    "tyraels_might": {
+        "localized_name": "티리엘의_권능",
+        "num_inherents": 1
+    },
+    "ugly_bastard_helm": {
+        "localized_name": "못생긴_놈_투구",
+        "num_inherents": 0
+    },
+    "unbroken_chain": {
+        "localized_name": "부서지지_않는_사슬",
+        "num_inherents": 0
+    },
+    "unsung_ascetics_wraps": {
+        "localized_name": "무명_고행자의_두르개",
+        "num_inherents": 0
+    },
+    "vasilys_prayer": {
+        "localized_name": "바실리의_기도",
+        "num_inherents": 0
+    },
+    "vengeful_sinew": {
+        "localized_name": "원한_서린_힘줄",
+        "num_inherents": 0
+    },
+    "vision_of_the_firestorm": {
+        "localized_name": "화염폭풍의_환영",
+        "num_inherents": 0
+    },
+    "vox_omnium": {
+        "localized_name": "만인지성",
+        "num_inherents": 0
+    },
+    "ward_of_the_white_dove": {
+        "localized_name": "하얀_비둘기의_호신부",
+        "num_inherents": 2
+    },
+    "waxing_gibbous": {
+        "localized_name": "차오르는_철월",
+        "num_inherents": 0
+    },
+    "wendigo_brand": {
+        "localized_name": "웬디고_낙인",
+        "num_inherents": 0
+    },
+    "widows_web": {
+        "localized_name": "과부거미의_거미줄",
+        "num_inherents": 0
+    },
+    "wildheart_hunger": {
+        "localized_name": "야생심장의_갈망",
+        "num_inherents": 0
+    },
+    "will_of_rathma": {
+        "localized_name": "라트마의_의지",
+        "num_inherents": 0
+    },
+    "will_of_stone": {
+        "localized_name": "돌의_의지",
+        "num_inherents": 0
+    },
+    "windforce": {
+        "localized_name": "바람살",
+        "num_inherents": 0
+    },
+    "word_of_hakan": {
+        "localized_name": "하칸의_말",
+        "num_inherents": 0
+    },
+    "wound_drinker": {
+        "localized_name": "상처_포식자",
+        "num_inherents": 0
+    },
+    "wreath_of_auric_laurel": {
+        "localized_name": "금빛_월계수의_화관",
+        "num_inherents": 0
+    },
+    "writhing_band_of_trickery": {
+        "localized_name": "몸부림치는_속임수의_가락지",
+        "num_inherents": 0
+    },
+    "wushe_nak_pa": {
+        "localized_name": "우셰_낙_파",
+        "num_inherents": 0
+    },
+    "wyrdskin": {
+        "localized_name": "운명가죽",
+        "num_inherents": 0
+    },
+    "xfals_corroded_signet": {
+        "localized_name": "크팔의_부식된_인장",
+        "num_inherents": 0
+    },
+    "yens_blessing": {
+        "localized_name": "엔의_축복",
+        "num_inherents": 0
+    }
+}

@@ -1,0 +1,16 @@
+.env
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+build/
+dist/
+dist-win/
+dist-win-portable/
+logs/
+*.log
+*.bak
+.idea/
+.vscode/

@@ -1,0 +1,104 @@
+from typing import TYPE_CHECKING
+
+from src.game_data import GameCatalog, ItemRarity, ItemType
+from src.perception import correct_name
+
+if TYPE_CHECKING:
+    from collections.abc import Sequence
+
+    from src.profiles.affixes import AffixFilterCountModel
+    from src.type_aliases import YamlValue
+
+
+def _parse_item_type_or_rarities(data: str | ItemType | Sequence[str | ItemType]) -> list[str]:
+    values = [data] if isinstance(data, (str, ItemType)) else data
+    catalog = GameCatalog()
+    normalized: list[str] = []
+    for value in values:
+        if isinstance(value, ItemType):
+            normalized.append(value.value)
+            continue
+        item_type = catalog.item_type_from_text(value)
+        normalized.append(item_type.value if item_type else value)
+    return normalized
+
+
+def _validate_set_name(name: str | None, field_name: str) -> str | None:
+    if not name:
+        return None
+
+    name = correct_name(name)
+    if name in GameCatalog().set_name_aliases:
+        name = GameCatalog().set_name_aliases[name]
+    if name not in GameCatalog().set_list:
+        msg = f"{field_name} {name} does not exist"
+        raise ValueError(msg)
+    return name
+
+
+def _normalize_rarities(data: str | ItemRarity | int | Sequence[str | ItemRarity | int]) -> list[str]:
+    values = [data] if isinstance(data, (str, ItemRarity, int)) else data
+    normalized: list[str] = []
+    invalid_rarity_message = "rarities must be strings or item rarity values"
+    for value in values:
+        normalized_value = value.value if isinstance(value, ItemRarity) else value
+        if not isinstance(normalized_value, str):
+            raise ValueError(invalid_rarity_message)
+        normalized.append(normalized_value.lower())
+    return normalized
+
+
+def _normalize_tribute_names(data: str | list[str] | None) -> list[str]:
+    if data is None:
+        return []
+    values = [data] if isinstance(data, str) else data
+
+    tribute_dict = GameCatalog().tribute_dict
+    normalized_names: list[str] = []
+    for name in values:
+        if not name:
+            continue
+        if name in GameCatalog().tribute_name_aliases:
+            normalized_names.append(GameCatalog().tribute_name_aliases[name])
+            continue
+        name_with_tribute = f"tribute_of_{name}"
+        if name in tribute_dict:
+            normalized_names.append(name)
+            continue
+        if name_with_tribute in tribute_dict:
+            normalized_names.append(name_with_tribute)
+            continue
+        msg = f"No tribute named {name} or {name_with_tribute} exists"
+        raise ValueError(msg)
+    return normalized_names
+
+
+def _as_string_keyed_dict(data: YamlValue) -> dict[str, YamlValue] | None:
+    if not isinstance(data, dict):
+        return None
+
+    normalized: dict[str, YamlValue] = {}
+    for key, value in data.items():
+        if not isinstance(key, str):
+            return None
+        normalized[key] = value
+    return normalized
+
+
+def _legacy_filter_values(value: YamlValue) -> list[YamlValue]:
+    if isinstance(value, str) or value is None:
+        return [value]
+    if isinstance(value, list):
+        return list(value)
+    return [value]
+
+
+def _validate_affix_pool_names(
+    affix_pool: list[AffixFilterCountModel], valid_affixes: dict[str, str], field_name: str
+) -> None:
+    invalid_affix_names = sorted({
+        affix.name for affix_group in affix_pool for affix in affix_group.count if affix.name not in valid_affixes
+    })
+    if invalid_affix_names:
+        msg = f"{field_name} affix {', '.join(invalid_affix_names)} does not exist"
+        raise ValueError(msg)

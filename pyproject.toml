@@ -1,0 +1,182 @@
+[project]
+name = "d4lf"
+requires-python = ">=3.14"
+dependencies = [
+  "beautifultable",
+  "colorama",
+  "httpx",
+  "lxml",
+  "mss",
+  "natsort",
+  "numpy",
+  "opencv-python",
+  "pillow",
+  "psutil",
+  "pydantic",
+  "pydantic-numpy",
+  "pynput",
+  "pyqt6",
+  "python-jsonpath",
+  "pytweening",
+  "pywin32; sys_platform == 'win32'",
+  "pyyaml",
+  "rapidfuzz",
+  "ruamel-yaml",
+  "selenium",
+  "seleniumbase",
+]
+dynamic = ["version"]
+
+[dependency-groups]
+dev = [
+  "lxml-stubs",
+  "pyinstaller",
+  "pytest",
+  "pytest-cov",
+  "pytest-mock",
+  "pytest-xdist",
+  "ruff",
+  "ty",
+  "types-psutil",
+  "types-pywin32",
+  "typing-extensions",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src"]
+
+[tool.hatch.version]
+path = "src/__init__.py"
+
+[tool.ruff]
+indent-width = 4
+line-length = 120
+preview = true
+
+[tool.ruff.format]
+docstring-code-format = true
+docstring-code-line-length = "dynamic"
+indent-style = "space"
+line-ending = "auto"
+quote-style = "double"
+skip-magic-trailing-comma = true
+
+[tool.ruff.lint]
+ignore = [
+  "ambiguous-unicode-character-string",  # fix more in the future
+  "assert",  # fix more in the future
+  "boolean-default-value-positional-argument",
+  "boolean-type-hint-positional-argument",
+  "collection-literal-concatenation",  # fix more in the future
+  "commented-out-code",  # fix more in the future
+  "complex-structure",  # fix more in the future
+  "dict-index-missing-items",  # fix more in the future
+  "docstring-extraneous-exception",  # fix more in the future, this is docs
+  "docstring-missing-exception",  # fix more in the future, this is docs
+  "docstring-missing-returns",  # fix more in the future, this is doc
+  "error-instead-of-exception",  # fix more in the future
+  "exc-info-outside-except-handler",
+  "global-statement",  # fix more in the future
+  "global-variable-not-assigned",  # fix more in the future
+  "implicit-class-var-in-dataclass",  # fix more in the future
+  "line-contains-hack",  # fix more in the future
+  "line-contains-todo",  # fix more in the future
+  "line-too-long",
+  "literal-membership",  # fix more in the future
+  "logging-f-string",
+  "magic-value-comparison",  # fix more in the future
+  "missing-copyright-notice",
+  "missing-todo-author",  # fix more in the future
+  "missing-todo-colon",  # fix more in the future
+  "missing-todo-link",  # fix more in the future
+  "missing-trailing-comma",
+  "mutable-class-default",  # fix more in the future
+  "no-self-use",  # fix more in the future, staticmethods
+  "non-augmented-assignment",  # fix more in the future
+  "non-empty-init-module",  # fix more in the future
+  "non-pep695-generic-function",  # fix more in the future
+  "numpy-legacy-random",  # fix more in the future
+  "print",  # fix more in the future
+  "private-member-access",  # fix more in the future
+  "pytest-raises-ambiguous-pattern",  # fix more in the future
+  "raise-vanilla-args",  # fix more in the future
+  "raise-vanilla-class",  # fix more in the future
+  "redefined-argument-from-local",  # fix more in the future
+  "start-process-with-a-shell",  # fix more in the future
+  "start-process-with-no-shell",  # fix more in the future
+  "start-process-with-partial-path",
+  "subprocess-without-shell-equals-true",
+  "suspicious-non-cryptographic-random-usage",  # fix more in the future
+  "suspicious-subprocess-import",
+  "too-many-arguments",
+  "too-many-boolean-expressions",  # fix more in the future
+  "too-many-branches",  # fix more in the future
+  "too-many-locals",  # fix more in the future
+  "too-many-nested-blocks",  # fix more in the future
+  "too-many-positional-arguments",
+  "too-many-public-methods",  # fix more in the future
+  "too-many-return-statements",  # fix more in the future
+  "too-many-statements",  # fix more in the future
+  "too-many-statements-in-try-clause",  # fix more in the future
+  "type-check-without-type-error",  # fix more in the future
+  "undocumented-magic-method",
+  "undocumented-public-class",
+  "undocumented-public-function",
+  "undocumented-public-init",
+  "undocumented-public-method",
+  "undocumented-public-module",
+  "undocumented-public-nested-class",
+  "undocumented-public-package",
+  "unnecessary-lambda",  # fix more in the future
+  "unsafe-yaml-load",  # fix more in the future
+  "unused-function-argument",  # fix more in the future
+  "unused-method-argument",  # fix more in the future
+  "unused-unpacked-variable",  # fix more in the future
+]
+select = ["ALL"]
+
+[tool.ruff.lint.isort]
+split-on-trailing-comma = false
+
+[tool.ruff.lint.per-file-ignores]
+"tests/*" = [
+  "assert",
+  "boolean-positional-value-in-call",
+  "import-private-name",
+  "magic-value-comparison",
+  "missing-return-type-private-function",
+  "missing-return-type-special-method",
+  "missing-return-type-static-method",
+  "missing-return-type-undocumented-public-function",
+  "missing-type-args",
+  "missing-type-function-argument",
+  "missing-type-kwargs",
+  "private-member-access",
+  "suspicious-non-cryptographic-random-usage",
+]
+"src/paragon/__init__.py" = [
+  "import-outside-top-level",
+  "undefined-export",
+]
+"src/paragon/_*.py" = [
+  "undefined-local-with-import-star",
+  "undefined-local-with-import-star-usage",
+]
+"src/paragon/_shared.py" = ["any-type", "unused-import"]
+
+[tool.ruff.lint.pydocstyle]
+convention = "google"
+
+[tool.ty.analysis]
+respect-type-ignore-comments = false
+
+[tool.ty.environment]
+python-platform = "win32"
+python-version = "3.14"
+
+[tool.ty.rules]
+all = "error"
