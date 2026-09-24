@@ -127,15 +127,24 @@ def _compute_affix_layout(tts_section: list[str], item: Item) -> tuple[int, int,
 
 
 def _assign_aspect_or_set(item: Item, aspect_or_set_text: str | None) -> None:
-    if not aspect_or_set_text or item.name is None:
+    if item.name is None:
         return
     if item.rarity == ItemRarity.Mythic:
-        item.aspect = Aspect(name=item.name, text=aspect_or_set_text, value=find_number(aspect_or_set_text))
+        item.aspect = Aspect(
+            name=item.name,
+            text=aspect_or_set_text,
+            value=find_number(aspect_or_set_text) if aspect_or_set_text else None,
+        )
     elif item.rarity == ItemRarity.Unique:
-        item.aspect = _get_aspect_from_text(aspect_or_set_text, item.name)
+        item.aspect = (
+            _get_aspect_from_text(aspect_or_set_text, item.name) if aspect_or_set_text else Aspect(name=item.name)
+        )
     elif item.rarity == ItemRarity.Set:
-        item.set = aspect_or_set_text
+        if aspect_or_set_text:
+            item.set = aspect_or_set_text
     else:
+        if not aspect_or_set_text:
+            return
         item.aspect = _get_aspect_from_name(aspect_or_set_text, item.name)
 
 

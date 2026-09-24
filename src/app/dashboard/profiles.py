@@ -114,6 +114,7 @@ class ActivityProfileRowsMixin:
             self._filter_profiles(self.profile_search_input.text())
         else:
             self._update_zebra_striping()
+        self._refresh_equipment_profiles()
 
     def _create_row_btn(self: ActivityLogWidget, text: str) -> QPushButton:
         btn = QPushButton(text)

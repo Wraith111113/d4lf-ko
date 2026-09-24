@@ -359,6 +359,10 @@
     "hellbrand_signet": {
         "num_inherents": 0
     },
+    "hellfire_torch": {
+        "localized_name": "Hellfire Torch",
+        "num_inherents": 0
+    },
     "hellhammer": {
         "num_inherents": 0
     },
@@ -402,6 +406,13 @@
         "num_inherents": 0
     },
     "insatiable_fury": {
+        "num_inherents": 0
+    },
+    "insight": {
+        "num_inherents": 0
+    },
+    "enigma": {
+        "localized_name": "Enigma",
         "num_inherents": 0
     },
     "jacinth_shell": {

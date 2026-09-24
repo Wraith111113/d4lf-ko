@@ -15,9 +15,17 @@ from src.perception.text import keep_letters_and_spaces
 
 LOGGER = logging.getLogger(__name__)
 
-_AFFIX_DISPLAY_ALIASES = {
-    "모든 저항": "resistance_to_all_elements",
-}
+_AFFIX_DISPLAY_ALIASES = {"모든 저항": "resistance_to_all_elements"}
+_ASPECT_STOP_MARKERS = (
+    "requires level",
+    "요구 레벨",
+    "properties lost when equipped",
+    "장착 시 사라지는 속성",
+    "sell value",
+    "판매 가격",
+    "right mouse button",
+    "마우스 오른쪽 버튼",
+)
 
 
 def _update_item_object(item: Item, rarity: ItemRarity | None = None, item_type: ItemType | None = None) -> Item:
@@ -102,7 +110,12 @@ def _get_aspect_or_set_from_tts_section(tts_section: list[str], item: Item, star
     # Grab the aspect/set as well in this case
     if item.rarity in [ItemRarity.Mythic, ItemRarity.Unique, ItemRarity.Legendary]:
         aspect_index = start + num_affixes
-        return tts_section[aspect_index]
+        if aspect_index >= len(tts_section):
+            return None
+        line = tts_section[aspect_index]
+        if any(line.casefold().startswith(marker) for marker in _ASPECT_STOP_MARKERS):
+            return None
+        return line
     if item.rarity == ItemRarity.Set:
         for line in tts_section[start + num_affixes :]:
             set_name = _get_set_from_text(line)
@@ -184,10 +197,7 @@ def _get_affix_from_text(text: str, item_type: ItemType | None = None) -> Affix:
         return result
 
     match = rapidfuzz.process.extractOne(
-        query,
-        candidates,
-        scorer=rapidfuzz.distance.Levenshtein.distance,
-        score_cutoff=max(2, len(query) // 3),
+        query, candidates, scorer=rapidfuzz.distance.Levenshtein.distance, score_cutoff=max(2, len(query) // 3)
     )
     if match is None or not isinstance(match[0], str):
         LOGGER.warning("Could not safely match affix name: %s", result.text)
@@ -219,13 +229,11 @@ def _get_affix_dictionary(item_type: ItemType | None) -> dict[str, str]:
 
     if item_type == ItemType.HoradricSeal:
         return with_english_aliases(
-            catalog.affix_dict | catalog.seal_affix_dict,
-            catalog.english_affix_dict | catalog.english_seal_affix_dict,
+            catalog.affix_dict | catalog.seal_affix_dict, catalog.english_affix_dict | catalog.english_seal_affix_dict
         )
     if item_type == ItemType.Charm:
         return with_english_aliases(
-            catalog.affix_dict | catalog.charm_affix_dict,
-            catalog.english_affix_dict | catalog.english_charm_affix_dict,
+            catalog.affix_dict | catalog.charm_affix_dict, catalog.english_affix_dict | catalog.english_charm_affix_dict
         )
     return with_english_aliases(catalog.affix_dict, catalog.english_affix_dict)
 

@@ -1,8 +1,8 @@
-import html
 from typing import TYPE_CHECKING, cast
 
 from PyQt6.QtCore import Qt, pyqtSignal
 from PyQt6.QtWidgets import (
+    QComboBox,
     QFrame,
     QGridLayout,
     QHBoxLayout,
@@ -18,13 +18,11 @@ from PyQt6.QtWidgets import (
 
 from src.app.dashboard.controls import ActivityLogControlsMixin
 from src.app.dashboard.drag import ActivityProfileDragMixin, DragHandleButton
+from src.app.dashboard.equipment import EquipmentProgressionMixin
 from src.app.dashboard.profiles import ActivityProfileRowsMixin
 from src.desktop.activity import ANSIConsoleWidget
 from src.desktop.widgets import CheckmarkCheckBox
-from src.game_data import GameCatalog
 from src.localization import tr
-from src.loot.equipped_scan import EquippedResult
-from src.profiles import ProfileDocumentError, ProfileDocumentStore
 from src.settings import IS_HOTKEY_KEY, get_settings
 
 if TYPE_CHECKING:
@@ -33,7 +31,9 @@ if TYPE_CHECKING:
 __all__ = ["ActivityLogWidget", "DragHandleButton"]
 
 
-class ActivityLogWidget(ActivityProfileRowsMixin, ActivityProfileDragMixin, ActivityLogControlsMixin, QWidget):
+class ActivityLogWidget(
+    ActivityProfileRowsMixin, ActivityProfileDragMixin, ActivityLogControlsMixin, EquipmentProgressionMixin, QWidget
+):
     equipped_scan_update = pyqtSignal(object)
 
     def __init__(self, parent: QWidget | None = None) -> None:
@@ -121,10 +121,30 @@ class ActivityLogWidget(ActivityProfileRowsMixin, ActivityProfileDragMixin, Acti
         equipment_hdr = QLabel(tr("EQUIPPED GEAR STATUS"))
         equipment_hdr.setObjectName("dashboard-section-heading")
         equipment_section.addWidget(equipment_hdr)
+        equipment_section.addWidget(QLabel(tr("Compare profile")))
+        self.equipment_profile_choice = QComboBox()
+        self.equipment_profile_choice.currentIndexChanged.connect(self._equipment_profile_changed)
+        equipment_section.addWidget(self.equipment_profile_choice)
         self.scan_equipment_btn = QPushButton(tr("Scan Equipped Gear"))
         self.scan_equipment_btn.setObjectName("primary")
         self.scan_equipment_btn.clicked.connect(self._start_equipped_scan)
         equipment_section.addWidget(self.scan_equipment_btn)
+        equipment_section.addWidget(QLabel(tr("Compare stage")))
+        self.equipment_stage_choice = QComboBox()
+        self.equipment_stage_choice.currentIndexChanged.connect(self._render_equipment)
+        equipment_section.addWidget(self.equipment_stage_choice)
+        self.progression_status = QLabel()
+        self.progression_status.setWordWrap(True)
+        self.progression_status.setTextFormat(Qt.TextFormat.RichText)
+        self.progression_status.setAlignment(Qt.AlignmentFlag.AlignTop)
+        progression_scroll = QScrollArea()
+        progression_scroll.setWidgetResizable(True)
+        progression_scroll.setFrameShape(QFrame.Shape.NoFrame)
+        progression_scroll.setMinimumHeight(100)
+        progression_scroll.setMaximumHeight(220)
+        progression_scroll.setWidget(self.progression_status)
+        equipment_section.addWidget(QLabel(tr("Stage changes")))
+        equipment_section.addWidget(progression_scroll)
         self.equipment_status = QLabel(
             tr("No equipped gear scan yet. Open the character screen and press Scan Equipped Gear.")
         )
@@ -136,6 +156,7 @@ class ActivityLogWidget(ActivityProfileRowsMixin, ActivityProfileDragMixin, Acti
         equipment_scroll.setWidgetResizable(True)
         equipment_scroll.setFrameShape(QFrame.Shape.NoFrame)
         equipment_scroll.setWidget(self.equipment_status)
+        equipment_section.addWidget(QLabel(tr("My gear")))
         equipment_section.addWidget(equipment_scroll, stretch=1)
         equipment_page = QWidget()
         equipment_page.setLayout(equipment_section)
@@ -203,66 +224,13 @@ class ActivityLogWidget(ActivityProfileRowsMixin, ActivityProfileDragMixin, Acti
         action_layout.addWidget(self.minimize_to_tray_cb)
 
         self.main_layout.addLayout(action_layout)
+        self._selected_profile = None
+        self._selected_stage = None
+        self._stage_profiles = {}
+        self._scan_results = []
+        self._profile_load_error = ""
         self._connect_signals()
         self.refresh_profiles()
-
-    def _start_equipped_scan(self) -> None:
-        if not self._config.general.profiles:
-            self.equipment_status.setText(tr("Select an active profile first."))
-            return
-        handler = self._main_window.worker.script_handler if self._main_window and self._main_window.worker else None
-        if handler is None:
-            self.equipment_status.setText(tr("Game connection is not ready."))
-            return
-        name = self._config.general.profiles[0]
-        path = self._config.user_dir / "profiles" / f"{name}.yaml"
-        if not path.exists():
-            path = path.with_suffix(".yml")
-        try:
-            profile = ProfileDocumentStore.default().load(path).profile
-            self.scan_equipment_btn.setEnabled(False)
-            self.equipment_status.setText(tr("Scanning equipped gear..."))
-            handler.scan_equipped(profile, self.equipped_scan_update.emit)
-        except (OSError, ProfileDocumentError, RuntimeError) as error:
-            self.scan_equipment_btn.setEnabled(True)
-            self.equipment_status.setText(str(error))
-
-    def _show_equipped_scan(self, result: object) -> None:
-        if result is None:
-            self.scan_equipment_btn.setEnabled(True)
-            return
-        if isinstance(result, Exception):
-            self.scan_equipment_btn.setEnabled(True)
-            self.equipment_status.setText(str(result))
-            return
-        if not isinstance(result, list):
-            return
-        lines = []
-        for entry in result:
-            if not isinstance(entry, EquippedResult):
-                continue
-            state = {
-                "complete": tr("Complete"),
-                "incomplete": tr("Needs work"),
-                "unread": tr("Not read"),
-                "no_target": tr("No profile target"),
-            }.get(entry.state, entry.state)
-            missing = ", ".join(
-                tr("Greater affixes needed")
-                if name.startswith("greater affixes ")
-                else GameCatalog().affix_dict.get(name, name.replace("_", " "))
-                for name in entry.missing
-            )
-            color = {"complete": "#62e889", "incomplete": "#f0be65"}.get(entry.state, "#9aa4b2")
-            label = tr("Weapon") if entry.label == "Mace" else entry.label
-            lines.append(
-                f"{entry.slot + 1}. <b>{html.escape(label)}</b>: <span style='color:{color}'>{html.escape(state)}</span>"
-                + (f"<br><span style='color:#aeb5bf'>{html.escape(entry.item_name)}</span>" if entry.item_name else "")
-                + (f"<br><span style='color:#aeb5bf'>{html.escape(missing)}</span>" if missing else "")
-            )
-        self.equipment_status.setText("<br><br>".join(lines))
-        if len(result) >= 13:
-            self.scan_equipment_btn.setEnabled(True)
 
     def _setup_hotkey_grid(self) -> None:
         """Build the hotkey grid dynamically from AdvancedOptionsModel metadata."""

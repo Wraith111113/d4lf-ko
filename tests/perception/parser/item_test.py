@@ -96,6 +96,38 @@ def test_korean_unique_charm_resolves_to_canonical_unique_name() -> None:
     assert item.aspect.name == "in-geom"
 
 
+def test_korean_insight_unique_tts_does_not_raise_when_aspect_line_is_missing() -> None:
+    item_text = [
+        "통찰",
+        "선조 고유 양손 낫",
+        "아이템 위력 900",
+        "품질 25 ( +25)",
+        "무기고 장비 구성",
+        "랄티르탈솔",
+        "4,429 초당 공격력",
+        "적중당 공격력 [4,154 - 5,690]",
+        "초당 공격 횟수 0.90 (느림)",
+        "무기 공격력 +316 [207 - 345]",
+        "모든 능력치 +395 +[300 - 360]",
+        "정수 재생 +38 +[30]",
+        "공격 속도 +52.5%",
+        "극대화 확률 +36.7% [16.0 - 46.0]%",
+        "극대화 피해 계수 x250% [200]%",
+        "극대화 확률 +15.0%",
+        "물리 피해 계수 x24%",
+        "물리 피해 계수 x24%",
+        "요구 레벨: 70. 계정 귀속 강령술사 전용. 고유 장착. 증오의 군주 아이템",
+        "판매가: 547,885 금화",
+    ]
+
+    item = parse_item_text(item_text)
+
+    assert item is not None
+    assert item.name == "insight"
+    assert item.aspect is not None
+    assert item.aspect.name == "insight"
+
+
 def test_equipped_korean_ring_starts_affixes_after_all_resistance() -> None:
     item_text = [
         "범람의 거대심장 가락지",

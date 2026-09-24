@@ -479,6 +479,10 @@
         "localized_name": "지옥낙인_인장",
         "num_inherents": 0
     },
+    "hellfire_torch": {
+        "localized_name": "지옥불_횃불",
+        "num_inherents": 0
+    },
     "hellhammer": {
         "localized_name": "지옥망치",
         "num_inherents": 0
@@ -537,6 +541,14 @@
     },
     "insatiable_fury": {
         "localized_name": "만족을_모르는_분노",
+        "num_inherents": 0
+    },
+    "insight": {
+        "localized_name": "통찰",
+        "num_inherents": 0
+    },
+    "enigma": {
+        "localized_name": "수수께끼",
         "num_inherents": 0
     },
     "jacinth_shell": {

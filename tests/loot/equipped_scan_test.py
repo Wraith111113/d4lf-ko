@@ -45,6 +45,43 @@ def test_equipped_comparison_uses_profile_threshold_and_reports_missing(mock_ini
     assert complete.missing == ()
 
 
+def test_equipped_comparison_accepts_optional_candidates_after_minimum_is_met(mock_ini_loader) -> None:
+    profile = ProfileModel(
+        name="example",
+        Affixes=[
+            DynamicItemFilterModel(
+                root={
+                    "Ring": ItemFilterModel(
+                        item_type=[ItemType.Ring],
+                        affix_pool=[
+                            AffixFilterCountModel(
+                                count=[
+                                    AffixFilterModel(name="critical_strike_chance"),
+                                    AffixFilterModel(name="attack_speed"),
+                                    AffixFilterModel(name="maximum_life"),
+                                ],
+                                min_count=2,
+                            )
+                        ],
+                    )
+                }
+            )
+        ],
+    )
+    ring = Item(
+        item_type=ItemType.Ring,
+        rarity=ItemRarity.Legendary,
+        power=900,
+        affixes=[Affix(name="critical_strike_chance"), Affix(name="attack_speed")],
+    )
+
+    result = compare_equipped_item(0, ring, profile)
+
+    assert result.state == "complete"
+    assert result.missing == ()
+    assert result.item is ring
+
+
 def test_scan_reads_new_tts_per_slot_and_marks_unread(monkeypatch, mock_ini_loader) -> None:
     profile = ProfileModel(name="example")
     monkeypatch.setattr(equipped_scan, "is_connected", lambda: True)

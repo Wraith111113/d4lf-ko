@@ -37,6 +37,7 @@ class EquippedResult:
     matched: tuple[str, ...] = ()
     missing: tuple[str, ...] = ()
     item_name: str = ""
+    item: Item | None = None
 
 
 def _max_equipped_count(item_type: ItemType) -> int:
@@ -60,7 +61,7 @@ def compare_equipped_item(
     label = GameCatalog().item_type_label(item.item_type) if item.item_type else (item.original_name or "Unknown")
     targets = _targets(profile, item)
     if not targets:
-        return EquippedResult(slot, label, "no_target", item_name=item.original_name or "")
+        return EquippedResult(slot, label, "no_target", item_name=item.original_name or "", item=item)
     if len(targets) > 1 and used_targets:
         available = [(name, spec) for name, spec in targets if name not in used_targets]
         if available:
@@ -77,12 +78,14 @@ def compare_equipped_item(
             )
             matched_ids = {id(expected) for expected, _ in pairs}
             found.extend(expected.name for expected, _ in pairs)
-            missing.extend(expected.name for expected in pool.count if id(expected) not in matched_ids)
+            if len(pairs) < pool.min_count:
+                missing.extend(expected.name for expected in pool.count if id(expected) not in matched_ids)
         for pool in spec.inherent_pool:
             pairs = matcher._match_count_group(pool.model_copy(update={"min_count": 0}), item.inherent)
             matched_ids = {id(expected) for expected, _ in pairs}
             found.extend(expected.name for expected, _ in pairs)
-            missing.extend(expected.name for expected in pool.count if id(expected) not in matched_ids)
+            if len(pairs) < pool.min_count:
+                missing.extend(expected.name for expected in pool.count if id(expected) not in matched_ids)
         aspect_ok = matcher._check_unique_aspects_for_item(item, spec.unique_aspect)
         if not aspect_ok and spec.unique_aspect:
             missing.extend(aspect.name for aspect in spec.unique_aspect)
@@ -107,7 +110,7 @@ def compare_equipped_item(
         candidates.append((
             len(found),
             complete,
-            EquippedResult(slot, name, state, tuple(found), tuple(missing), item.original_name or ""),
+            EquippedResult(slot, name, state, tuple(found), tuple(missing), item.original_name or "", item),
         ))
     return max(candidates, key=operator.itemgetter(1, 0))[2]
 
